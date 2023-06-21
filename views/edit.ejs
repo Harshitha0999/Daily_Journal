@@ -1,0 +1,15 @@
+<%- include('partials/header') %> 
+
+<h1>Edit</h1>
+
+<form action="/edit?_method=PUT" method="POST" >
+    
+
+    <label style="font-weight: bold;" for="title">Title</label></label>
+    <input type="text" name="title" id="title" style="width: 100%;" value="<%= title %>">
+    <label style="font-weight: bold;" for="content" >Post</label>
+    <textarea type="text" name="content"id="content" style="display: block;margin-bottom: 20px;width: 100%;" rows="5" ><%= body %></textarea>
+    <button type="submit" name="postId" value="<%= postId %>"  style="background-color: rgb(79, 79, 230); border: none;border-radius: 5px;padding: 8px;color: white;">Publish</button>
+</form>
+
+<%- include('partials/footer') %> 
